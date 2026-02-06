@@ -1,0 +1,29 @@
+application:
+  frontendUrl: "http://localhost:4200"
+  backendUrl: "http://localhost:8000"
+
+accounts:
+  userA:
+    username: "testuser_a"
+    email: "testuser_a@example.com"
+    password: "TestPassword123!"
+  userB:
+    username: "testuser_b"
+    email: "testuser_b@example.com"
+    password: "TestPassword123!"
+  wrongPassword: "WrongPassword999!"
+
+testData:
+  article:
+    description: "Test description"
+    body: "This is a test article body with some content."
+    tags: ["test", "automation", "playwright"]
+  updatedArticle:
+    body: "This is an updated test article body."
+    tags: ["updated"]
+  filterTag: "test"
+
+timeouts:
+  navigation: 30000
+  element: 10000
+  api: 5000

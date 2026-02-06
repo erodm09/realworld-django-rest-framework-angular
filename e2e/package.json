@@ -1,0 +1,26 @@
+{
+  "name": "realworld-ui-automation",
+  "version": "1.0.0",
+  "description": "UI automated tests for RealWorld Django REST Framework Angular application",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "test:ui": "playwright test --ui",
+    "test:report": "playwright show-report"
+  },
+  "keywords": [
+    "playwright",
+    "automation",
+    "testing",
+    "e2e"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.40.0",
+    "@types/node": "^20.10.0",
+    "typescript": "^5.3.0",
+    "yaml": "^2.3.4"
+  }
+}

@@ -1,0 +1,12 @@
+services:
+  playwright:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    network_mode: host
+    environment:
+      - FRONTEND_URL=${FRONTEND_URL:-http://localhost:4200}
+      - BACKEND_URL=${BACKEND_URL:-http://localhost:8000}
+    volumes:
+      - ./test-results:/app/test-results
+      - ./playwright-report:/app/playwright-report
